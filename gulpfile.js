@@ -3,8 +3,8 @@
  *   @createDate 2020/2/23
  */
 const { watch, series } = require('gulp');
-var gulp = require("gulp");
-var scss = require("gulp-sass");
+const gulp = require("gulp");
+const scss = require("gulp-sass");
 
 function css() {
 	return gulp.src("sass/index.scss")
