@@ -335,6 +335,8 @@ ul li {
             float: left;
             height: 25px;
             line-height: 25px; }
+            .content-wrap .content .quick-services .news-wrap .news-content ul li a {
+              color: #3C3C3C; }
           .content-wrap .content .quick-services .news-wrap .news-content ul .news1 {
             width: 260px; }
           .content-wrap .content .quick-services .news-wrap .news-content ul .news2 {
