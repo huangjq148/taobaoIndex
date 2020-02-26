@@ -17,6 +17,8 @@ body, button, input, select, textarea {
 
 body {
   background-color: #f4f4f4; }
+  body a:hover {
+    color: #ff5000; }
 
 ul li {
   list-style: none; }
@@ -44,7 +46,7 @@ ul li {
         color: #f22e00; }
 
 .logo-search-area {
-  height: 122px;
+  height: 121px;
   background-color: #FFFFFF; }
   .logo-search-area .content {
     padding-top: 24px;
@@ -171,7 +173,7 @@ ul li {
       border-top: none;
       padding-top: 5px;
       padding-bottom: 3px;
-      height: 510px;
+      height: 512px;
       background-color: #FFFFFF; }
       .content-wrap .content .types-menus ul li {
         overflow: hidden;
@@ -184,6 +186,15 @@ ul li {
         font-weight: 400;
         width: 145px;
         color: #666; }
+        .content-wrap .content .types-menus ul li:hover {
+          background-color: #ffe4dc; }
+          .content-wrap .content .types-menus ul li:hover a {
+            color: #FF5000; }
+        .content-wrap .content .types-menus ul li a {
+          color: #666; }
+          .content-wrap .content .types-menus ul li a:hover {
+            text-decoration-line: underline;
+            text-line-through-style: #FF5000; }
     .content-wrap .content .hot-goods {
       float: left;
       margin-left: 10px;
@@ -205,33 +216,86 @@ ul li {
         background-color: yellow;
         float: right;
         margin-right: 10px; }
-      .content-wrap .content .hot-goods .block3 {
-        width: 520px;
-        height: 18px;
-        padding-top: 11px;
-        padding-bottom: 1px;
-        float: right;
-        margin-right: 10px; }
-      .content-wrap .content .hot-goods .block4 {
+      .content-wrap .content .hot-goods .bottom-left-wrap {
+        position: relative;
+        width: 520px; }
+        .content-wrap .content .hot-goods .bottom-left-wrap .block3 {
+          width: 520px;
+          height: 18px;
+          padding-top: 11px;
+          padding-bottom: 1px;
+          float: left; }
+          .content-wrap .content .hot-goods .bottom-left-wrap .block3 .tianmao-wrap {
+            padding-left: 2px; }
+            .content-wrap .content .hot-goods .bottom-left-wrap .block3 .tianmao-wrap .tianmao-logo {
+              width: 122px;
+              height: 22px;
+              float: left; }
+          .content-wrap .content .hot-goods .bottom-left-wrap .block3 .tianmao-word {
+            position: absolute;
+            margin-left: 136px; }
+          .content-wrap .content .hot-goods .bottom-left-wrap .block3 .img-info {
+            position: absolute;
+            right: 0;
+            font-family: sans-serif;
+            font-size: 12px;
+            font-weight: 400; }
+        .content-wrap .content .hot-goods .bottom-left-wrap .block4 ul {
+          position: absolute;
+          top: 29px;
+          height: 3px;
+          line-height: 0;
+          width: 520px;
+          font-size: 0;
+          left: 0; }
+          .content-wrap .content .hot-goods .bottom-left-wrap .block4 ul li {
+            width: 16.6%;
+            height: 100%;
+            display: inline-block;
+            background-color: #ff1648;
+            float: left;
+            cursor: pointer; }
+          .content-wrap .content .hot-goods .bottom-left-wrap .block4 ul li.selected {
+            background-color: black; }
+          .content-wrap .content .hot-goods .bottom-left-wrap .block4 ul .img1, .content-wrap .content .hot-goods .bottom-left-wrap .block4 ul .img2, .content-wrap .content .hot-goods .bottom-left-wrap .block4 ul .img3, .content-wrap .content .hot-goods .bottom-left-wrap .block4 ul .img4 {
+            width: 87px; }
+          .content-wrap .content .hot-goods .bottom-left-wrap .block4 ul .img5, .content-wrap .content .hot-goods .bottom-left-wrap .block4 ul .img6 {
+            width: 86px; }
+        .content-wrap .content .hot-goods .bottom-left-wrap .bottom-wrap {
+          position: relative;
+          display: inline-block;
+          background-color: #FFFFFF;
+          width: 520px;
+          height: 199px;
+          margin-top: 2px; }
+          .content-wrap .content .hot-goods .bottom-left-wrap .bottom-wrap .block5 {
+            width: 251px;
+            height: 190px;
+            background-color: blue;
+            margin-top: 6px;
+            margin-left: 6px; }
+          .content-wrap .content .hot-goods .bottom-left-wrap .bottom-wrap .block6 {
+            width: 251px;
+            height: 190px;
+            background-color: blue;
+            margin-top: 6px;
+            margin-left: 6px; }
+      .content-wrap .content .hot-goods .bottom-right-wrap {
         width: 160px;
-        height: 18px;
-        padding-top: 11px;
-        padding-bottom: 1px; }
-      .content-wrap .content .hot-goods .block5 {
-        width: 255px;
-        height: 200px;
-        background-color: blue; }
-      .content-wrap .content .hot-goods .block6 {
-        width: 255px;
-        height: 200px;
-        background-color: blue;
-        margin-left: 10px; }
-      .content-wrap .content .hot-goods .block7 {
-        width: 160px;
-        height: 200px;
-        background-color: black;
-        float: right;
-        margin-right: 10px; }
+        margin-right: 10px;
+        float: right; }
+        .content-wrap .content .hot-goods .bottom-right-wrap .block7 {
+          font-size: 12px;
+          font-weight: 400;
+          background: #f1f1f1;
+          color: #a1a1a1;
+          height: 24px;
+          line-height: 24px;
+          padding-top: 6px;
+          width: 100%; }
+        .content-wrap .content .hot-goods .bottom-right-wrap .block8 {
+          height: 200px;
+          background-color: black; }
     .content-wrap .content .quick-services {
       width: 290px;
       height: 510px;
@@ -321,8 +385,6 @@ ul li {
             text-align: center; }
             .content-wrap .content .quick-services .news-wrap ul.news-type li a {
               color: #3C3C3C; }
-              .content-wrap .content .quick-services .news-wrap ul.news-type li a:hover {
-                color: #ff5000; }
           .content-wrap .content .quick-services .news-wrap ul.news-type li.selected {
             border-bottom: 2px solid #ff5000; }
             .content-wrap .content .quick-services .news-wrap ul.news-type li.selected a {
@@ -348,7 +410,7 @@ ul li {
         height: 151px; }
         .content-wrap .content .quick-services .services ul li {
           float: left;
-          width: calc( 25% - 1px);
+          width: calc(25% - 1px);
           height: 75px;
           line-height: 75px;
           text-align: center; }
